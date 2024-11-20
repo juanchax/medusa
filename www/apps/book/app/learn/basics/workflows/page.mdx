@@ -52,7 +52,7 @@ const step2 = createStep("step-2", async ({ name }: WorkflowInput) => {
 
 ### 2. Create a Workflow
 
-Next, add the following to the same file to create the workflow using the `createWorkflow` function:
+Next, add the following to the same file to create the workflow using the `createWorkflow` function. Imports:
 
 ```ts title="src/workflows/hello-world.ts"
 import {
@@ -60,8 +60,12 @@ import {
   createWorkflow,
   WorkflowResponse,
 } from "@medusajs/framework/workflows-sdk"
+```
 
-// ...
+Workflow creation:
+
+```ts title="src/workflows/hello-world.ts"
+// step1 and step2 definition...
 
 const myWorkflow = createWorkflow(
   "hello-world",
