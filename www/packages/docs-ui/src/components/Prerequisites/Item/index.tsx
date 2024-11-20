@@ -8,6 +8,7 @@ export type PrerequisiteItemType = {
   text: string
   link?: string
   position?: PrerequisiteItemPosition
+  target?: string
 }
 
 type PrerequisiteItemProps = {
@@ -15,7 +16,7 @@ type PrerequisiteItemProps = {
 }
 
 export const PrerequisiteItem = ({
-  item: { text, link, position = "alone" },
+  item: { text, link, position = "alone", target = "_blank" },
 }: PrerequisiteItemProps) => {
   return (
     <Link
