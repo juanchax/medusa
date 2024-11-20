@@ -32,6 +32,11 @@ export default async function helloWorldLoader() {
 
 Import the loader in `src/modules/hello/index.ts` and export it in the module's definition:
 
+
+> [!NOTE]  
+> If you've already added a module definition as a part of the [Modules](https://docs.medusajs.com/learn/basics/modules) guide, you'll need to add the loaders export line to the default Module export in the index.ts file.
+
+
 ```ts title="src/modules/hello/index.ts"
 // other imports...
 import helloWorldLoader from "./loaders/hello-world"
