@@ -16,7 +16,7 @@ type PrerequisiteItemProps = {
 }
 
 export const PrerequisiteItem = ({
-  item: { text, link, position = "alone", target = "_blank" },
+  item: { text, link, position = "alone" },
 }: PrerequisiteItemProps) => {
   return (
     <Link
