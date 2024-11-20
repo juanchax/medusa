@@ -18,6 +18,7 @@ export const Link = ({
   children,
   className,
   withIcon = false,
+  target = "_blank"
   ...rest
 }: LinkProps) => {
   if (href?.replace(/#.*$/, "").endsWith("page.mdx")) {
