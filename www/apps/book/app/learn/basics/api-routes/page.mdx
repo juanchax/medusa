@@ -20,6 +20,9 @@ An API Route is created in a TypeScript or JavaScript file under the `src/api` d
 
 Each file exports API Route handler functions for at least one HTTP method (`GET`, `POST`, `DELETE`, etc…).
 
+> [!NOTE]  
+> The following step can be skipped if you already followed the [Your First Customizations](https://docs.medusajs.com/learn/first-customizations) guide.
+
 For example, to create a `GET` API Route at `/hello-world`, create the file `src/api/hello-world/route.ts` with the following content:
 
 ```ts title="src/api/hello-world/route.ts"
@@ -37,6 +40,7 @@ export const GET = (
   })
 }
 ```
+
 
 ### Test API Route
 
